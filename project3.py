@@ -1,5 +1,5 @@
 import streamlit as st
-import pandas as pt
+import pandas as pd
 
 st.title("📊 Любими неща - класна анкета")
 
@@ -37,7 +37,7 @@ st.subheader("☑️ Резултати")
 # Графика за цветовете
 st.write("Любими цветове") 
 colors_df = pd.DataFrame.from_dict( 
- st.session_state.colors, orient="index", columns=["Брой"] 
+   st.session_state.colors, orient="index", columns=["Брой"] 
 ) 
 st.bar_chart(colors_df)
 
