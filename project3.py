@@ -26,7 +26,8 @@ color = st.selectbox("Любим цвят:", list(st.session_state.colors.keys()
 color = st.selectbox("Любим цвят:", list(st.session_state.colors.keys()))
 
 if st.button("Запази избора"):
- st.session_state.colors[color] += 1 st.session_state.sports[sport] += 1 
+ st.session_state.colors[color] += 1 
+ st.session_state.sports[sport] += 1 
  st.success("Изборът е записан!")
 
 st.divider()
